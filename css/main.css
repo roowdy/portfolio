@@ -10,3 +10,252 @@
   --second-background-color: #e4e6eb;
   --white-color: #ffffff;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: var(--paragraph-font-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.left-sidebar {
+  position: fixed;
+  content: "";
+  width: 305px;
+  height: 100vh;
+  background-color: var(--white-color);
+  padding: 50px 45px 25px 40px;
+}
+
+.firstBlock {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.firstBlock__img {
+}
+
+.firstBlock__img-wrapper {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #cfcfcf;
+}
+
+.firstBlock__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 31px;
+}
+
+.firstBlock__title--link {
+  color: var(--black-color);
+  text-transform: capitalize;
+}
+
+.firstBlock__profession {
+  color: var(--paragraph-font-color);
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.network-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.network-list__icon {
+  fill: var(--black-color);
+  display: block;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.network-list__item {
+  border-radius: 50%;
+  box-shadow: none;
+  transition: box-shadow 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.network-list__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.network-list__item:hover .network-list__icon {
+  fill: var(--white-color);
+}
+
+.network-list__item:hover {
+  box-shadow: 0px 5px 5px rgba(43, 43, 43, 0.384);
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--background-color);
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.secondBlock {
+}
+
+.about-list {
+}
+
+.about-list li {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.about-list__information {
+  color: var(--black-color);
+}
+
+.about-list__information--bg {
+  background-color: var(--main-color);
+  padding: 2px 5px;
+  color: var(--black-color);
+}
+
+.avaible {
+  color: greenyellow;
+}
+
+.scroll-wrapper {
+  position: relative;
+  overflow: auto;
+  height: calc(100vh - 440px);
+  margin-top: 315px;
+  padding-top: 20px;
+  scrollbar-width: 0;
+  border-top: 1px solid var(--background-color);
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.thirdBlock {
+}
+
+.thirdBlock-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-transform: capitalize;
+
+  /* Black */
+
+  color: var(--black-color);
+}
+
+.languages {
+}
+
+.language-ukraine,
+.language-english,
+.skills-html,
+.skills-css,
+.skills-js,
+.skills-react {
+  display: flex;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+}
+
+.language-name {
+}
+
+.language-score {
+}
+
+.scale-wrapper {
+  width: 99%;
+  height: 7px;
+  display: inline-grid;
+  border-radius: 20px;
+  border: 1px solid #ffb400;
+  box-sizing: unset;
+}
+
+.scale {
+  width: 98%;
+  display: inline-grid;
+}
+
+.scale-point {
+  background-color: rgb(255, 180, 0);
+  width: 100%;
+  max-width: 100%;
+  height: 3px;
+  align-self: center;
+  margin: 2px;
+  border-radius: 20px;
+  display: inline-grid;
+  transition: width 1s ease 0s;
+}
+
+.scale-point--english {
+  background-color: rgb(255, 180, 0);
+  width: 60%;
+  max-width: 100%;
+  height: 3px;
+  align-self: center;
+  margin: 2px;
+  border-radius: 20px;
+  display: inline-grid;
+  transition: width 1s ease 0s;
+}
+
+.scale-point--html {
+  width: 80%;
+  max-width: 100%;
+  height: 3px;
+  align-self: center;
+  margin: 2px;
+  border-radius: 20px;
+  display: inline-grid;
+  transition: width 1s ease 0s;
+  background-color: rgb(255, 180, 0);
+}
