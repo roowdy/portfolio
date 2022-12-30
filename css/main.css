@@ -272,6 +272,8 @@ body {
   align-items: center;
   background-color: #fff;
   padding-left: 40px;
+  padding-top: 93px;
+  padding-bottom: 74px;
 }
 
 .hero-content {
@@ -354,9 +356,78 @@ body {
   position: fixed;
   width: 110px;
   background-color: #fff;
+  padding-top: 100px;
 }
 
 .navigation-list__icon {
-  fill: var(--black-color);
+  position: absolute;
+  fill: #767676;
   z-index: 100;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: fill 500ms ease;
+}
+
+.navigation-list__item {
+  position: relative;
+  display: block;
+  margin-top: 43px;
+  background-color: #f0f0f6;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: background-color 500ms ease;
+}
+
+.navigation-list__link {
+  padding: 20px;
+  border-radius: 50%;
+}
+
+.navigation-list__item:hover {
+  background-color: var(--main-color);
+}
+
+.navigation-list__item:hover .navigation-list__icon {
+  fill: #000;
+}
+
+.navigation-list__item::before {
+  display: none;
+  content: "";
+  position: absolute;
+  /* display: block; */
+  width: 65px;
+  height: 33px;
+  top: -90%;
+  left: 0;
+  transform: translateX(-18%);
+  background-image: url("../img/Union.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hint {
+  position: relative;
+  display: none;
+}
+
+.hint::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: -20%;
+  top: -50%;
+  width: 55px;
+  height: 40px;
+  background-image: url("../img/Union.svg");
+  width: 55px;
+  color: #000;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
